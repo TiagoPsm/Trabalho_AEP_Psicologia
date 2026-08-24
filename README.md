@@ -31,4 +31,5 @@ Cronograma do desenvolvimento ----------------------------------------
 | Data | Atividade | Responsável |
 
 | 19.08.2026 | Realizar o levantamento de requisitos | Bárbara     |
+
 | 24.08.2026 | Descoberta dos requisitos | Bárbara     |
