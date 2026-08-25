@@ -32,8 +32,19 @@ RF05 - Suporte à divulgação e visibilidade do psicólogo
 
 Cronograma do desenvolvimento ----------------------------------------
 
-| Data | Atividade | Responsável |
+Sprint / Data	Épico	UserStory	Responsável
 
-| 19.08.2026 | Realizar o levantamento de requisitos | Bárbara     |
+Sprint 1 / (31/08 a 06/09)	Cadastro e Perfis	COMO UM psicólogo EU QUERO criar e gerenciar meu perfil profissional na plataforma PARA QUE eu possa divulgar minhas especialidades, abordagem e informações de contato.	Tiago
 
-| 24.08.2026 | Descoberta dos requisitos | Bárbara     |
+Sprint 2 (07/09 a 13/09)	Cadastro e Perfis	COMO UM paciente EU QUERO me cadastrar na plataforma e informar minhas preferências, interesses e necessidades PARA QUE o sistema possa me recomendar profissionais compatíveis.	Bárbara
+
+Sprint 3 (14/09 a 20/09)	Recomendação Inteligente	COMO UM paciente EU QUERO receber sugestões de psicólogos com base nas minhas preferências e perfil PARA QUE eu encontre um profissional com maior afinidade e me sinta mais confortável.	Maria
+
+Sprint 4 (21/09 a 27/09)	Busca e Filtros	COMO UM paciente EU QUERO filtrar psicólogos por abordagem, modalidade de atendimento, disponibilidade e localização PARA QUE eu encontre profissionais que atendam aos meus critérios específicos.
+Tiago e Bárbara 
+
+Sprint 5 (28/09 a 04/10)	Agendamento	COMO UM paciente EU QUERO agendar, remarcar e cancelar consultas com um psicólogo PARA QUE eu possa gerenciar minhas sessões de forma prática e integrada.	Maria
+
+Sprint 6 (05/10 a 11/10)	Agendamento	COMO UM psicólogo EU QUERO visualizar minha agenda de consultas e receber notificações de novos agendamentos ou cancelamentos PARA QUE eu possa organizar minha rotina de atendimentos.	Tiago
+
+Sprint 7 (12/10 a 18/10)	Painel de Gestão	COMO UM psicólogo EU QUERO acessar um painel com indicadores de frequência, cancelamentos e faturamento PARA QUE eu tenha uma visão consolidada da minha prática clínica.	Bárbara
