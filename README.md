@@ -1,50 +1,184 @@
-Requisitos identificados para esse projeto ----------------------------------------
+# PsicoMatch
+## Plataforma de Conexão entre Psicólogos e Pacientes
 
-RF01 - Sistema de agendamento
+<div align="center">
 
-	Origem: Na entrevista feita com a profissional de psicologia, é relatada a falta de uma plataforma centralizada para à ajudar com sua agenda
-	Descrição: A plataforma deve permitir agendar, remarcar e cancelar consultas (presenciais e online), e envios de lembretes automáticos ao paciente e profissional
-	Regra de negócio: O agendamento deve verificar a disponibilidade do profissional, não permitindo um dois agendamentos em um mesmo horário e dia
+**UNICESUMAR** | Curso de Engenharia de Software (ESoft-4SNB)
 
-RF02 - Recomendação inteligente de psicólogo
+Maringá - PR | 2026
 
-	Origem: Dificuldade de encontrar um profissional adequado 
-	Descrição: Criar “tags” para juntar pacientes e profissionais com interesses em comum
-	Regra de negócio: O sistema tem que permitir que o paciente informe seus itens de interesse, necessidades, preferências e outras características que deseja ao se encontrar com um psicólogo para terapia. A 			plataforma deve utilizar essas informações, juntamente com a abordagem, especialidades e perfil dos psicólogos, para recomendar profissionais com maior compatibilidade com o paciente. 
+---
 
-RF03 - Painel de gestão para o psicólogo
+Desenvolvido por: 
+- Tiago Pereira Silva Martin
+- Bárbara Ferreira Barbosa Stramandinoli
+- Maria Quintela Ribeiro
 
-	Origem: Foi notada, pela profissional, a falta de uma visão consolidada sobre seus pacientes, frequência, cancelamento e faturamento
-	Descrição: A plataforma deve ter um painel com indicadores como o número de consultas, taxa de comparecimento, cancelamentos e faturamento.
-  	Regra de negócio: Os dados devem ser mantidos em sigilo e devem ser visualizados apenas para o devido profissional
+</div>
 
-RF04 - Busca e filtro de psicólogos
+---
 
-	Origem: Necessidade de facilitar o encontro entre pacientes e profissionais 
-	Descrição: O sistema deve permitir que o paciente pesquise e filtre psicólogos cadastrados na plataforma de acordo com critérios como área de atuação, abordagem psicológica, modalidade de atendimento, 				disponibilidade e nível de compatibilidade. 
-	Regra de negócio: O sistema deve apresentar apenas psicólogos com cadastro profissional válido e que atendam aos critérios selecionados pelo paciente. Os resultados devem ser organizados de acordo com o nível 		de compatibilidade entre o perfil do paciente e o profissional, priorizando aqueles que apresentarem maior afinidade. 
+## 📋 Visão Geral
 
-RF05 - Suporte à divulgação e visibilidade do psicólogo
+**PsicoMatch** é uma plataforma digital que conecta pacientes a psicólogos compatíveis em Maringá, facilitando o estabelecimento de vínculo terapêutico através de recomendação inteligente e gestão integrada de agendamentos.
 
-	Origem: Na entrevista, foi relatada a frustração com a dificuldade de se divulgar e encontrar pacientes
-	Descrição: A plataforma deve oferecer um perfil público para o psicólogo, com suas especialidades, formação, valores, e gostos pessoais (que ele próprio irá colocar)
-	Regra de negócio: O perfil deve poder ser criado, atualizado e excluído.
+### ❌ Problema Identificado
 
-Cronograma do desenvolvimento ----------------------------------------
+#### Psicólogos enfrentam:
+- Gestão fragmentada de agenda (WhatsApp, Instagram, planilhas)
+- Dificuldade em divulgar seus serviços digitalmente
+- Falta de visão consolidada sobre pacientes e faturamento
 
-Sprint / Data	Épico	UserStory	Responsável
+#### Pacientes enfrentam:
+- Dificuldade em encontrar profissionais compatíveis
+- Falta de confiança no início do tratamento
+- Alta taxa de abandono precoce do tratamento
 
-Sprint 1 / (31/08 a 06/09)	Cadastro e Perfis	COMO UM psicólogo EU QUERO criar e gerenciar meu perfil profissional na plataforma PARA QUE eu possa divulgar minhas especialidades, abordagem e informações de contato.	Tiago
+### ✅ Solução Proposta
 
-Sprint 2 (07/09 a 13/09)	Cadastro e Perfis	COMO UM paciente EU QUERO me cadastrar na plataforma e informar minhas preferências, interesses e necessidades PARA QUE o sistema possa me recomendar profissionais compatíveis.	Bárbara
+Plataforma centralizada que:
 
-Sprint 3 (14/09 a 20/09)	Recomendação Inteligente	COMO UM paciente EU QUERO receber sugestões de psicólogos com base nas minhas preferências e perfil PARA QUE eu encontre um profissional com maior afinidade e me sinta mais confortável.	Maria
+```
+├── Conecta pacientes a psicólogos com base em perfil, 
+│   especialidades e interesses comuns
+│
+├── Automatiza agendamento, lembretes e gestão de consultas
+│
+├── Oferece visibilidade profissional e painel de gestão 
+│   para psicólogos
+│
+└── Fortalece o vínculo terapêutico desde o primeiro contato
+```
 
-Sprint 4 (21/09 a 27/09)	Busca e Filtros	COMO UM paciente EU QUERO filtrar psicólogos por abordagem, modalidade de atendimento, disponibilidade e localização PARA QUE eu encontre profissionais que atendam aos meus critérios específicos.
-Tiago e Bárbara 
+---
 
-Sprint 5 (28/09 a 04/10)	Agendamento	COMO UM paciente EU QUERO agendar, remarcar e cancelar consultas com um psicólogo PARA QUE eu possa gerenciar minhas sessões de forma prática e integrada.	Maria
+## 🎯 Alinhamento com ODS
 
-Sprint 6 (05/10 a 11/10)	Agendamento	COMO UM psicólogo EU QUERO visualizar minha agenda de consultas e receber notificações de novos agendamentos ou cancelamentos PARA QUE eu possa organizar minha rotina de atendimentos.	Tiago
+Este projeto alinha-se à **ODS 3 da ONU** - Saúde e Bem-estar
 
-Sprint 7 (12/10 a 18/10)	Painel de Gestão	COMO UM psicólogo EU QUERO acessar um painel com indicadores de frequência, cancelamentos e faturamento PARA QUE eu tenha uma visão consolidada da minha prática clínica.	Bárbara
+```
+├── Promove acesso a serviços de saúde mental de qualidade
+│
+├── Melhora a adesão e efetividade do tratamento psicológico
+│
+└── Apoia profissionais na expansão de seus serviços
+```
+
+---
+
+---
+
+## 📌 Requisitos Funcionais
+
+### 🗓️ RF01 - Sistema de Agendamento
+```
+├── Agendar, remarcar e cancelar consultas 
+│   (presenciais e online)
+│
+├── Lembretes automáticos para paciente e profissional
+│
+└── Validação de disponibilidade (sem conflitos de horário)
+```
+
+### 🤝 RF02 - Recomendação Inteligente
+```
+├── Tags de compatibilidade entre pacientes e psicólogos
+│
+├── Análise de interesses, necessidades, preferências 
+│   e especialidades
+│
+└── Ranking de profissionais por afinidade com o paciente
+```
+
+### 📊 RF03 - Painel de Gestão
+```
+├── Indicadores de consultas, comparecimento, 
+│   cancelamentos e faturamento
+│
+├── Acesso exclusivo do profissional aos seus dados
+│
+└── Sigilo profissional garantido
+```
+
+### 🔍 RF04 - Busca e Filtro
+```
+├── Filtrar por especialidade, abordagem, modalidade, 
+│   disponibilidade e localização
+│
+├── Ordenação por compatibilidade
+│
+└── Exibição apenas de profissionais com cadastro válido
+```
+
+### 👤 RF05 - Perfil Público do Psicólogo
+```
+├── Criar, atualizar e excluir perfil profissional
+│
+└── Divulgar especialidades, formação, valores 
+    e interesses pessoais
+```
+
+---
+
+## 📅 Cronograma de Desenvolvimento
+
+<details open>
+<summary><b>Sprints (Agosto - Outubro 2024)</b></summary>
+
+| Sprint | Período | Épico | User Story | Responsável |
+|:------:|---------|-------|-----------|:----------:|
+| **1** | 31/08 - 06/09 | Cadastro e Perfis | Psicólogo: criar e gerenciar perfil profissional | Tiago |
+| **2** | 07/09 - 13/09 | Cadastro e Perfis | Paciente: cadastro com preferências e interesses | Bárbara |
+| **3** | 14/09 - 20/09 | Recomendação Inteligente | Paciente: receber sugestões de psicólogos compatíveis | Maria |
+| **4** | 21/09 - 27/09 | Busca e Filtros | Paciente: filtrar psicólogos por critérios específicos | Tiago e Bárbara |
+| **5** | 28/09 - 04/10 | Agendamento | Paciente: agendar, remarcar e cancelar consultas | Maria |
+| **6** | 05/10 - 11/10 | Agendamento | Psicólogo: visualizar agenda e receber notificações | Tiago |
+| **7** | 12/10 - 18/10 | Painel de Gestão | Psicólogo: acessar indicadores de prática clínica | Bárbara |
+
+</details>
+
+---
+
+## 🔍 Fundamentação Teórica
+
+Conforme **"Counselling Psychotherapy Research"**, a qualidade do vínculo psicólogo-cliente é determinante para a eficácia da consulta.
+
+Ao facilitar a compatibilidade desde o primeiro contato, **PsicoMatch** contribui para:
+
+```
+├── Redução do tempo de estabelecimento de rapport
+│
+├── Maior confiança inicial do paciente
+│
+├── Redução da taxa de abandono precoce
+│
+└── Melhor adesão ao tratamento
+```
+
+---
+
+## 👥 Equipe de Desenvolvimento
+
+| Membro | Função |
+|:------:|--------|
+| **Tiago Pereira Silva Martin** | Developer |
+| **Bárbara Ferreira Barbosa Stramandinoli** | Developer |
+| **Maria Quintela Ribeiro** | Developer |
+
+---
+
+## 📄 Licença & Informações
+
+**Projeto Acadêmico** - UNICESUMAR 2026
+
+Instituição: UNICESUMAR
+Curso: Engenharia de Software (ESoft-4SNB)
+Localização: Maringá - PR
+
+---
+
+<div align="center">
+
+### ⭐ Desenvolvido com foco em saúde mental de qualidade
+
+</div>
