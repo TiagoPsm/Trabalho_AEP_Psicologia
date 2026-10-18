@@ -18,15 +18,15 @@ public class Agendamento {
 
         paciente.setAgendamentos(this);
         profissional.setAgendamentos(this);
-        //clinica.setAgendamentos(this);
+        clinica.setAgendamentos(this);
     }
 
     public String getData() {
-        return data;
+        return "Data: " + data;
     }
 
     public String getHora() {
-        return hora;
+        return "Hora: " + hora;
     }
 
     public String getProfissional() {
@@ -37,7 +37,7 @@ public class Agendamento {
         return "Paciente: " + paciente.getNome();
     }
 
-    public Clinica getClinica() {
-        return clinica;
+    public String getClinica() {
+        return  "Clinica: " + clinica.getNome();
     }
 }
