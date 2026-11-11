@@ -1,0 +1,5 @@
+Pegue o script sql na pasta database e rode ele no vertrigo, phpMyAdmin (mySQL) versao 5.7.25
+
+Abra o codigo e confira o user e a senha em resources o db.propertis. (user = root, senha = vertrigo)
+
+E estara pronto
